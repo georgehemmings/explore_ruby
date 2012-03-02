@@ -13,4 +13,4 @@ from_inches_to_cms = lambda do |inches_string|
   "%.2f" % cms
 end
 
-"100".convert from_inches_to_cms  # => "225.00"
+puts "100".convert from_inches_to_cms  # => "225.00"

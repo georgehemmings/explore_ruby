@@ -1,3 +1,5 @@
+require "ap"
+
 class Automobile
   attr_reader :features
   
@@ -32,3 +34,5 @@ custom_batmobile = Batmobile.new do |bm|
   bm.add_bat_beam(qty: 2)
   bm.add_bat_ray
 end
+
+ap custom_batmobile
