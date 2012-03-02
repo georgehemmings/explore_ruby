@@ -1,7 +1,6 @@
 require "bigdecimal"
 
 class String
-
   def convert(convertor)
     convertor.call self
   end

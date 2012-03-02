@@ -1,16 +1,14 @@
 require "bigdecimal"
 
 class String
-    
   def convert(convertor)
     convertor.call self
   end
 end
 
 class CurrencyConvertor
-
   attr_accessor :usd_to_gbp_exchange_rate
-
+  
   def from_usd_to_gbp
     lambda do |usd_string|
       usd = BigDecimal.new(usd_string)

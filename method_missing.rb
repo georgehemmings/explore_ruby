@@ -1,5 +1,4 @@
 class Phone
-
   def initialize
     super
     @contacts = {}
