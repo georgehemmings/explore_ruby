@@ -19,9 +19,9 @@ class CurrencyConvertor
 end
 
 cc = CurrencyConvertor.new
-cc.usd_to_gbp_exchange_rate = BigDecimal("1.2")  # Set rate
+cc.usd_to_gbp_exchange_rate = BigDecimal("1.0")  # Set rate
 from_usd_to_gbp = cc.from_usd_to_gbp             # Create convertor
-cc.usd_to_gbp_exchange_rate = BigDecimal("2.0")  # Change rate
+cc.usd_to_gbp_exchange_rate = BigDecimal("0.6")  # Change rate
 cc = nil
 
-puts "500.00".convert from_usd_to_gbp            # => "1000.00"
+puts "500.00".convert from_usd_to_gbp            # => "300.00"
